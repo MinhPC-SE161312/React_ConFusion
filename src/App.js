@@ -16,6 +16,19 @@ import Garage from './components/Garage';
 import Welcome from './components/Welcome';
 import Car from './components/Car';
 import Menu from './components/MenuComponent';
+import { DISHES } from './shared/dishes';
+import PresentationalComponent from './components/PresentationalComponent';
+import ContainerComponent from './components/ContainerComponents';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Blogs from './components/Blogs';
+import Contact from './components/Contact';
+import NoPage from './components/NoPage';
+import Main from './components/MainComponent';
+import Profile from './components/Profile';
+import MyForm from './components/MyForm';
+import TestForm from './components/TestForm';
 
 // function formatName(user){
 //   return user.firstName + ' ' + user.lastName;
@@ -73,6 +86,24 @@ import Menu from './components/MenuComponent';
 //         {names}
 //       </ul>*/}
 //       {/* <Garage /> */}
+//       {/* <ContainerComponent /> */}
+//       <BrowserRouter>
+//         <div>
+//           <Switch>
+//               <Route exact path="/" component={Layout} />
+//               <Route path="/Home" component={Home} />
+//               <Route path="/Blogs" component={Blogs} />
+//               <Route path="/Contact" component={Contact} />
+//               <Route path="/Profile/:isLogin/:name" component={Profile} />
+//               <Route path="*" component={NoPage} />
+//           </Switch>
+          
+//         </div>
+//       </BrowserRouter>
+
+//       {/* <MyForm /> */}
+
+//       <TestForm />
 //       </div>
 
 //     );
@@ -99,16 +130,35 @@ import Menu from './components/MenuComponent';
 //   }
 // };
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar darkcolor="primary">
-        <div className="container">
-          <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
-        </div>
-      </Navbar>
-    </div>
-  );
+//WORKSHOP
+class App extends React.Component{
+  constructor(props){
+    super(props);
+  }
+  render(){
+    return(
+      <div className="App">
+        <BrowserRouter>
+          <Main />
+        </BrowserRouter>
+        
+
+      </div>
+    );
+  }
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Navbar darkcolor="primary">
+//         <div className="container">
+//           <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+//         </div>
+//       </Navbar>
+      
+//     </div>
+//   );
+// }
 
 export default App;
