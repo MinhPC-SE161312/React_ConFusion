@@ -23,12 +23,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Blogs from './components/Blogs';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import NoPage from './components/NoPage';
 import Main from './components/MainComponent';
 import Profile from './components/Profile';
 import MyForm from './components/MyForm';
 import TestForm from './components/TestForm';
+import MyUncontrolledForm from './components/MyUncontrolledForm(innerRef)';
+import MyUncontrolledForm1 from './components/MyUncontrolledForm1';
+import Contact from './components/ContactComponent';
 
 // function formatName(user){
 //   return user.firstName + ' ' + user.lastName;
@@ -103,7 +106,10 @@ import TestForm from './components/TestForm';
 
 //       {/* <MyForm /> */}
 
-//       <TestForm />
+//       {/* <TestForm /> */}
+      
+//       <MyUncontrolledForm1 />
+//       <MyUncontrolledForm />
 //       </div>
 
 //     );
