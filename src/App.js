@@ -23,7 +23,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Blogs from './components/Blogs';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 import NoPage from './components/NoPage';
 import Main from './components/MainComponent';
 import Profile from './components/Profile';
@@ -31,7 +31,12 @@ import MyForm from './components/MyForm';
 import TestForm from './components/TestForm';
 import MyUncontrolledForm from './components/MyUncontrolledForm(innerRef)';
 import MyUncontrolledForm1 from './components/MyUncontrolledForm1';
-import Contact from './components/ContactComponent';
+// import Contact from './components/ContactComponent';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './components/ConfigureStore';
+import Counter from './components/Counter';
+import ContactPage from './components/ContactPage';
+import { ConfigureStore2 } from './components/ConfigureStore2';
 
 // function formatName(user){
 //   return user.firstName + ' ' + user.lastName;
@@ -60,6 +65,17 @@ import Contact from './components/ContactComponent';
 //       <Hello msg="em chan co" user={data} />
 //       <Hello2 msg="ok" />
 //     </div>
+//   );
+// }
+
+// const store=ConfigureStore2();
+
+// function App(){
+//   return(
+//     <Provider store={store}>
+//         {/* <Counter /> */}
+//         <ContactPage />
+//       </Provider>
 //   );
 // }
 
@@ -108,8 +124,10 @@ import Contact from './components/ContactComponent';
 
 //       {/* <TestForm /> */}
       
-//       <MyUncontrolledForm1 />
-//       <MyUncontrolledForm />
+//       {/* <MyUncontrolledForm1 />
+//       <MyUncontrolledForm /> */}
+
+      
 //       </div>
 
 //     );
