@@ -33,10 +33,15 @@ import MyUncontrolledForm from './components/MyUncontrolledForm(innerRef)';
 import MyUncontrolledForm1 from './components/MyUncontrolledForm1';
 // import Contact from './components/ContactComponent';
 import { Provider } from 'react-redux';
-import { ConfigureStore } from './components/ConfigureStore';
+// import { ConfigureStore } from './components/ConfigureStore';
 import Counter from './components/Counter';
 import ContactPage from './components/ContactPage';
 import { ConfigureStore2 } from './components/ConfigureStore2';
+import { ConfigureStore3 } from './Redux Action/configureStore3';
+import TestComponent from './Redux Action/TestComponent';
+import { ConfigureStore4 } from './ReduxThunk/configureStore4';
+import TestReduxThunk from './ReduxThunk/TestReduxThunk';
+import { configureStore } from './redux/configureStore';
 
 // function formatName(user){
 //   return user.firstName + ' ' + user.lastName;
@@ -76,6 +81,24 @@ import { ConfigureStore2 } from './components/ConfigureStore2';
 //         {/* <Counter /> */}
 //         <ContactPage />
 //       </Provider>
+//   );
+// }
+
+// const store=ConfigureStore3();
+// function App(){
+//   return (
+//     <Provider store = {store}>
+//       <TestComponent />
+//     </Provider>
+//   );
+// }
+
+// const store=ConfigureStore4();
+// function App(){
+//   return (
+//     <Provider store = {store}>
+//       <TestReduxThunk />
+//     </Provider>
 //   );
 // }
 
@@ -155,19 +178,22 @@ import { ConfigureStore2 } from './components/ConfigureStore2';
 // };
 
 //WORKSHOP
+
+const store = configureStore();
+
 class App extends React.Component{
   constructor(props){
     super(props);
   }
   render(){
     return(
-      <div className="App">
+      <Provider store={store}>
         <BrowserRouter>
-          <Main />
+          <div className="App">
+            <Main />
+          </div>
         </BrowserRouter>
-        
-
-      </div>
+      </Provider>
     );
   }
 }
