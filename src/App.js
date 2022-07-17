@@ -42,7 +42,7 @@ import TestComponent from './Redux Action/TestComponent';
 import { ConfigureStore4 } from './ReduxThunk/configureStore4';
 import TestReduxThunk from './ReduxThunk/TestReduxThunk';
 import { configureStore } from './redux/configureStore';
-
+import TestFetchComponent from './useFetch/TestFetchComponent';
 // function formatName(user){
 //   return user.firstName + ' ' + user.lastName;
 // }
@@ -129,7 +129,7 @@ import { configureStore } from './redux/configureStore';
 //       </ul>*/}
 //       {/* <Garage /> */}
 //       {/* <ContainerComponent /> */}
-//       <BrowserRouter>
+//       {/* <BrowserRouter>
 //         <div>
 //           <Switch>
 //               <Route exact path="/" component={Layout} />
@@ -141,7 +141,7 @@ import { configureStore } from './redux/configureStore';
 //           </Switch>
           
 //         </div>
-//       </BrowserRouter>
+//       </BrowserRouter> */}
 
 //       {/* <MyForm /> */}
 
@@ -150,7 +150,7 @@ import { configureStore } from './redux/configureStore';
 //       {/* <MyUncontrolledForm1 />
 //       <MyUncontrolledForm /> */}
 
-      
+//       <TestFetchComponent />
 //       </div>
 
 //     );
